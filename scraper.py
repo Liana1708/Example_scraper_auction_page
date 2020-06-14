@@ -6,11 +6,11 @@ import lxml.html
 #
 # # Read in a page
 html = scraperwiki.scrape("https://www.sdlauctions.co.uk/property-list/")
-print(html)
+#print(html)
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
 matchedlinks = root.cssselect("li p a")
-print(matchedlinks)
+#print(matchedlinks)
  
  #Loop through the items in matchedlinks, calling each one li
 for li in matchedlinks:
