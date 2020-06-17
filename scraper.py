@@ -16,7 +16,7 @@ matchedlinks = root.cssselect("li p a")
 for li in matchedlinks:
   #Store the text contents of li in a new variable listtext
   listtext=li.text_content()
-  print(listtext)
+  print(listtext.encode('utf-8'))
   #create a dictionary called record
   record = {}
    #store it in the 'record' dictionary under the key 'address'
