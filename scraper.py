@@ -22,7 +22,7 @@ for li in matchedlinks:
    #store it in the 'record' dictionary under the key 'address'
   record['address'] = listtext
 # # Write out to the sqlite database using scraperwiki library
-scraperwiki.sqlite.save(['address'],record)
+  scraperwiki.sqlite.save(['address'],record)
 #
 # # An arbitrary query against the database
 # scraperwiki.sql.select("* from data where 'name'='peter'")
